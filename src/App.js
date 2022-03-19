@@ -1,9 +1,22 @@
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
+import Navbar from './components/Navbar/Navbar'
+import Services from './components/Services/Services'
+import Recommend from './components/Recommend/Recommend'
+import Testimonials from './components/Testimonials/Testimonials'
+import Footer from './components/Footer/Footer'
+import Header from './components/Header/Header'
 
 function App() {
   return (
-    <div >
-      <h1>Hello</h1>
-    </div>
+    < >
+      {/* <ScrollToTop/> */}
+      <Navbar/>
+      <Header/>
+      <Services/>
+     {/*  <Recommend/>
+      <Testimonials/>
+      <Footer/> */}
+    </>
   );
 }
 
