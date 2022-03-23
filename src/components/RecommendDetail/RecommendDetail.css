@@ -1,0 +1,35 @@
+.destination {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 15px;
+    background-color: #e0dde6c2;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.3s ease-in-out;
+}
+.destination:hover {
+    transform: translateX(0.4rem) translateY(-1rem);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.destination img {
+    width: 100%;
+}
+.info {
+   display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info-services {
+    display: flex;
+    gap: 0.3rem;
+}
+.info-services img {
+    width: 2rem;
+    background-color: rgb(100, 110, 143);
+    padding: 0.2rem 0.4rem;
+}
+.distance {
+    display: flex;
+    justify-content: space-between;
+}

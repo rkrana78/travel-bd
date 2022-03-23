@@ -19,24 +19,24 @@
     display: none;
 }
 
-ul {
+.nav-container ul {
     list-style: none;
     display: flex;
     gap: 1.3rem;
 }
 
-ul li a {
+.nav-container ul li a {
     text-decoration: none;
     font-size: 1.2rem;
     color: lightcoral;
     transition: 0.1s ease-in-out;
 }
 
-ul li a:hover {
+.nav-container ul li a:hover {
     color: rgb(192, 101, 101);
 }
 
-ul li:first-of-type a {
+.nav-container ul li:first-of-type a {
     color: rgb(192, 101, 101);
     font-weight: 600;
 }
