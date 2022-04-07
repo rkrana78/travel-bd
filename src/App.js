@@ -10,12 +10,12 @@ function App() {
   return (
     < >
       {/* <ScrollToTop/> */}
-      <Navbar/>
-      <Header/>
-      <Services/>
-      <Recommend/>
-     {/*  <Testimonials/>
-      <Footer/> */}
+      <Navbar />
+      <Header />
+      <Services />
+      <Recommend />
+      <Testimonials />
+      <Footer />
     </>
   );
 }
