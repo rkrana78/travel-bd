@@ -9,7 +9,7 @@ import Header from './components/Header/Header'
 function App() {
   return (
     < >
-      {/* <ScrollToTop/> */}
+      {/* <ScrollToTop /> */}
       <Navbar />
       <Header />
       <Services />

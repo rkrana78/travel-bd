@@ -4,7 +4,7 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <section id='header'>
+        <section id='header' className='header-section'>
             <div className="background">
                 <img src={img} alt="travel" />
             </div>

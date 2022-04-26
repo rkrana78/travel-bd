@@ -53,6 +53,62 @@ button {
     text-transform: uppercase;
     transition: 0.3s ease-in-out;
 }
+
 button:hover {
-    background: lightcoral ;
+    background: lightcoral;
+}
+
+.navbar-res {
+    display: none
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+    .brand {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .brand .toggle {
+        display: block;
+    }
+
+    .nav-container ul,
+    button {
+        display: none;
+    }
+
+    .navbar-res {
+        display: block;
+        position: absolute;
+        z-index: 5;
+        background-color: white;
+    }
+
+    .navbar-res ul {
+        list-style: none;
+        width: 100%;
+    }
+
+    .navbar-res ul li {
+        width: 100%;
+        margin: 1rem 0;
+        margin-left: 2rem;
+    }
+
+    .navbar-res ul li a {
+        color: #0077b6;
+        font-size: 1.2rem;
+        transition: 0.1s ease-in-out;
+    }
+
+    .navbar-res ul li a:hover {
+        color: #023e8a;
+    }
+
+    .navbar-res ul li:first-of-type a {
+        color: #023e8a;
+        font-weight: 900;
+    }
 }
