@@ -1,3 +1,4 @@
+
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -19,24 +20,24 @@
     display: none;
 }
 
-.nav-container ul {
+.menu-link ul {
     list-style: none;
     display: flex;
     gap: 1.3rem;
 }
 
-.nav-container ul li a {
+.menu-link ul li a {
     text-decoration: none;
     font-size: 1.2rem;
     color: lightcoral;
     transition: 0.1s ease-in-out;
 }
 
-.nav-container ul li a:hover {
+.menu-link ul li a:hover {
     color: rgb(192, 101, 101);
 }
 
-.nav-container ul li:first-of-type a {
+.menu-link ul li:first-of-type a {
     color: rgb(192, 101, 101);
     font-weight: 600;
 }
@@ -58,9 +59,7 @@ button:hover {
     background: lightcoral;
 }
 
-.navbar-res {
-    display: none
-}
+
 
 @media screen and (min-width: 280px) and (max-width: 1080px) {
     .brand {
@@ -70,45 +69,45 @@ button:hover {
         width: 100%;
     }
 
-    .brand .toggle {
-        display: block;
-    }
-
-    .nav-container ul,
-    button {
+    .menu-link {
         display: none;
-    }
-
-    .navbar-res {
+      }
+      .nav-container button {
+          display: none;
+      }
+      .brand .toggle {
         display: block;
-        position: absolute;
-        z-index: 5;
+    }
+    .mobile-menu-link {
+        grid-column: 2/4;
+        position: relative;
+        z-index: 99;
+      }
+    
+      .mobile-menu-link {
         background-color: white;
-    }
-
-    .navbar-res ul {
-        list-style: none;
+        height: 18rem;
+        display: grid;
+        grid-column: 2/5;
+        align-items: center;
+        padding-left: 3rem;
+        transition: all 2s linear;
+        transform-origin: top;
+      }
+      .mobile-menu-link ul li {
         width: 100%;
+        margin-right: 2rem;
     }
-
-    .navbar-res ul li {
-        width: 100%;
-        margin: 1rem 0;
-        margin-left: 2rem;
-    }
-
-    .navbar-res ul li a {
-        color: #0077b6;
-        font-size: 1.2rem;
-        transition: 0.1s ease-in-out;
-    }
-
-    .navbar-res ul li a:hover {
-        color: #023e8a;
-    }
-
-    .navbar-res ul li:first-of-type a {
-        color: #023e8a;
-        font-weight: 900;
-    }
-}
+    
+      .mobile-menu-link ul {
+        height: 18rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: start;
+      }
+    
+      .mobile-menu-link ul li:first-child {
+        transition-delay: 0.2s;
+      }
+}   
