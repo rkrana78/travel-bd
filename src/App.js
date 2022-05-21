@@ -1,4 +1,3 @@
-import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import Navbar from './components/Navbar/Navbar'
 import Services from './components/Services/Services'
 import Recommend from './components/Recommend/Recommend'
@@ -9,7 +8,6 @@ import Header from './components/Header/Header'
 function App() {
   return (
     < >
-      {/* <ScrollToTop /> */}
       <Navbar />
       <Header />
       <Services />
